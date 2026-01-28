@@ -1,1 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: "Inter", Arial, sans-serif;
+      background-color: #f5f7fa;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    h1 {
+      font-size: 2rem;
+      color: #2a4d69;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      color: #2a4d69;
+      margin-top: 30px;
+    }
+
+    nav {
+      margin-bottom: 25px;
+      background-color: #2a4d69;
+      padding: 10px 15px;
+      border-radius: 6px;
+    }
+
+    nav a {
+      margin-right: 20px;
+      text-decoration: none;
+      color: #fff;
+      font-weight: 500;
+    }
+
+    section {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      margin-bottom: 25px;
+    }
+
+    input, textarea, button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 6px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+
+    button {
+      background-color: #2a4d69;
+      color: #fff;
+      font-weight: 600;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background-color: #1f3a50;
+    }
+
+    ul li a {
+      color: #2a4d69;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    ul li a:hover {
+      text-decoration: underline;
+    }
+
+  </style>
+</head>
+<body>
+  <h1 id="welcomeMessage">Welcome!</h1>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hi! I'm April, a creative developer passionate about building user-friendly web experiences!</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li><a href="https://github.com/aprtay2887.github.io/project1" target="_blank">Project One</a></li>
+      <li><a href="https://github.com/aprtay2887.github.io/project2" target="_blank">Project Two</a></li>
+      <li><a href="https://github.com/aprtay2887.github.io/project3" target="_blank">Project Three</a></li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <label for="senderName">Name:</label><br />
+      <input type="text" id="senderName" name="senderName" /><br /><br />
+
+      <label for="email">Email:</label><br />
+      <input type="email" id="email" name="email" /><br /><br />
+
+      <label for="subject">Subject:</label><br />
+      <input type="text" id="subject" name="subject" /><br /><br />
+
+      <label for="message">Message:</label><br />
+      <textarea id="message" name="message"></textarea><br /><br />
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <script>
+    // Prompt user for their name and personalize the welcome message
+    var userName = prompt("What's your name?");
+    if (userName) {
+      document.getElementById("welcomeMessage").textContent = "Welcome, " + userName + "!";
+    }
+  </script>
+</body>
+</html>
+
 
